@@ -2,13 +2,13 @@
 
 import React from "react"
 import { featuresSection } from "../data/features"
-import { LightbulbIcon, ZapIcon, RocketIcon } from "lucide-react"
+import { Compass, Cpu, Globe2 } from "lucide-react"
 
 
 const iconMap = {
-  LightbulbIcon,
-  ZapIcon,
-  RocketIcon,
+  Compass,
+  Cpu,
+  Globe2,
 }
 
 export function FeaturesSection() {
@@ -23,7 +23,7 @@ export function FeaturesSection() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {featuresSection.items.map(({ title, description, icon }) => {
-            const Icon = iconMap[icon as keyof typeof iconMap]
+            const Icon = iconMap[icon as keyof typeof iconMap] ?? Compass
             return (
               <div
                 key={title}

@@ -1,27 +1,22 @@
 export const quickLinks = [
-    { label: "Start", href: "/#hero" },
-    { label: "Features", href: "/#features" },
-    { label: "Entry Points", href: "/#cta" },
-    { label: "Connect", href: "/demo/#contact" },
+  { label: "Overview", href: "/#hero" },
+  { label: "Pillars", href: "/#features" },
+  { label: "Energy Plan", href: "/#cta" },
 ]
 
-export const socialLinks = [
-  { icon: "linkedin", href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: "instagram", href: "https://instagram.com", label: "Instagram" },
-]
+export const socialLinks: Array<{
+  icon: string
+  href: string
+  label: string
+}> = []
 
 export const brandInfo = {
-  title: "The Builders' Stack",
+  title: "Enercore Tech",
   description:
-    "15-minute talk show episodes that uncover hidden leverage in your business. Your entry point into the studio, infra, and network powering real builder growth through apps that actually represent your business. Made possible by 9Figures, FTLP, and GVN Nexus.",
-  partners: [
-    { src: "/assets/partnerlogo1.svg", alt: "9Figures" },
-    { src: "/assets/partnerlogo2.svg", alt: "FTLP" },
-    { src: "/assets/partnerlogo3.svg", alt: "GVN Nexus" },
-  ],
+    "We engineer storage and solar systems tuned to Southeast Asia — combining Enershare technology with local intelligence for reliable, sustainable power.",
 }
 
 export const siteData = {
   year: "2025",
-  org: "FTLP",
+  org: "Enercore Tech",
 }

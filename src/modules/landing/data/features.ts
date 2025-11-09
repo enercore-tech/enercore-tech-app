@@ -1,25 +1,25 @@
 // src/modules/landing/data/features.ts
 
 export const featuresSection = {
-  heading: "What Powers the Builders' Stack?",
+  heading: "The Enercore Pillars",
   items: [
     {
-      title: "15-Minute Epiphany Ritual",
+      title: "Engineered Clarity",
       description:
-        "Reveal hidden leverage in your business with our builder-first reflection format. Clarity, fast.",
-      icon: "LightbulbIcon",
+        "We begin with understanding, guiding you through the key decisions to audit, design, and optimize your energy setup. Enercore's role: your local intelligence partner.",
+      icon: "Compass",
     },
     {
-      title: "Quick Turn Stack",
+      title: "Enershare Inside",
       description:
-        "Turn your insight into launchable features with App Studio support, dev infra, and GTM tools.",
-      icon: "ZapIcon",
+        "Founded by Enershare, Enercore brings world-class storage and solar technologies directly to Southeast Asia - reliable, scalable, and cost-efficient. Enershare's role: the global technology foundation.",
+      icon: "Cpu",
     },
     {
-      title: "Studio-Backed Growth",
+      title: "Built for Southeast Asia",
       description:
-        "Get GTM roadmaps, app infra, and capital access — powered by 9Figures, FTLP, and GVN Nexus.",
-      icon: "RocketIcon",
+        "From Thailand's solar upgrades to Myanmar's generator replacements, we design systems tuned to your realities - powering homes, businesses, and communities sustainably. The shared mission: value for every energy user.",
+      icon: "Globe2",
     },
   ],
 }

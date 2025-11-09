@@ -4,7 +4,6 @@ import React, { useState } from "react"
 import Link from "next/link"
 import { BrandLogo } from "./BrandLogo"
 import { headerData } from "~/modules/common/data/headerData"
-import { Button } from "~/components/ui/button"
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)

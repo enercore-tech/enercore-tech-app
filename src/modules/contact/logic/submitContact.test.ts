@@ -17,7 +17,12 @@ describe("submitContact()", () => {
 
     const result = await submitContact(testData)
 
+    expect(result).toMatchObject({
+      firstName: testData.firstName,
+      lastName: testData.lastName,
+      email: testData.email,
+      phone: testData.phone,
+    })
     expect(result).toHaveProperty("id")
-    expect(result.properties.email.email).toBe(testData.email)
   })
 })

@@ -1,43 +1,14 @@
 // src/modules/landing/data/tiers.ts
 
 export const ctaSection = {
-  heading: "Choose Your Entry Point",
+  heading: "Ready to build your energy plan?",
   subheading:
-    "The Builders’ Stack offers a way in for every builder — from reflection to launch.",
+    "Start a guided Enercore audit to clarify the storage, solar, and infrastructure decisions that move you beyond generators.",
+  bullets: [
+    "Answer a short guided audit tuned to Southeast Asia sites.",
+    "Receive a tailored technology blueprint powered by Enershare.",
+    "Move forward with an Enercore roadmap for reliable, sustainable power.",
+  ],
+  ctaLabel: "Start My Energy Plan",
+  ctaHref: "",
 }
-
-export const tiers = [
-  {
-    title: "Free",
-    tagline: "Learn",
-    price: "$0",
-    features: [
-      "Join public rituals",
-      "Watch episode archive",
-      "Access reflection & traction templates",
-      "Join community group",
-    ],
-  },
-  {
-    title: "Starter",
-    tagline: "Reflect",
-    price: "$50",
-    features: [
-      "1 private ritual/month",
-      "Private notes + playback",
-      "Feature prompts & templates",
-      "GTM starter toolkit",
-    ],
-  },
-  {
-    title: "Studio",
-    tagline: "Build + Grow",
-    price: "Custom",
-    features: [
-      "Ritual + Quick Turn support",
-      "Studio-backed feature dev",
-      "GTM roadmap",
-      "Demo Day + Capital access",
-    ],
-  },
-]

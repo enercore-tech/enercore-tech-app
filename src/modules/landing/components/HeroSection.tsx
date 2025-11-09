@@ -16,10 +16,18 @@ export function HeroSection() {
         <p className="text-muted-foreground text-lg md:text-xl mb-8">
           {hero.subheadline}
         </p>
-        <Button asChild size="3" variant="solid">
-          <Link href={hero.ctaHref}>{hero.ctaLabel}</Link>
-        </Button>
-        <p className="mt-6 text-sm text-muted-foreground">{hero.tagline}</p>
+        {hero.ctaHref ? (
+          <Button asChild size="3" variant="solid">
+            <Link href={hero.ctaHref}>{hero.ctaLabel}</Link>
+          </Button>
+        ) : (
+          <Button size="3" variant="solid" disabled>
+            {hero.ctaLabel} (Coming Soon)
+          </Button>
+        )}
+        {hero.tagline ? (
+          <p className="mt-6 text-sm text-muted-foreground">{hero.tagline}</p>
+        ) : null}
       </div>
     </section>
   )
