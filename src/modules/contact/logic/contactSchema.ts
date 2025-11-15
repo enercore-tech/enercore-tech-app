@@ -1,10 +1,9 @@
-import { z } from "zod"
+import { z } from "zod";
 
 export const ContactInputSchema = z.object({
-  firstName: z.string().min(1, "First name is required"),
-  lastName: z.string().min(1, "Last name is required"),
-  phone: z.string().min(1, "Phone is required"),
-  email: z.string().email("Invalid email"),
-})
+  name: z.string().min(1, "Name is required"),
+  contact: z.string().min(1, "Contact information is required"),
+  interestedProducts: z.string().min(1, "Please select an interested product"),
+});
 
-export type ContactInput = z.infer<typeof ContactInputSchema>
+export type ContactInput = z.infer<typeof ContactInputSchema>;

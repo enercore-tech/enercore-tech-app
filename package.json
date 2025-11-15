@@ -13,7 +13,7 @@
     "test": "dotenv -e .env.test -- vitest run",
     "db:push:test": "dotenv -e .env.test -- prisma db push",
     "studio:test": "dotenv -e .env.test -- prisma studio",
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
     "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
     "postinstall": "prisma generate",
@@ -24,6 +24,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
     "@prisma/client": "^6.5.0",
     "@radix-ui/react-label": "^2.1.7",
     "@radix-ui/themes": "^3.2.1",

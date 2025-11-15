@@ -11,6 +11,7 @@ export const contactRouter = createTRPCRouter({
       try {
         return await submitContact(input)
       } catch (err) {
+        console.error("Contact submission error:", err)
                 
         const error = err as Error & { statusCode?: number }
         if (error.statusCode === 409) {
@@ -20,11 +21,11 @@ export const contactRouter = createTRPCRouter({
           })
         }
 
-        // console.log(err);
-
+        // Provide more detailed error message
+        const errorMessage = err instanceof Error ? err.message : "Something went wrong."
         throw new TRPCError({
           code: "INTERNAL_SERVER_ERROR",
-          message: "Something went wrong.",
+          message: errorMessage,
         })
       }
     }),
